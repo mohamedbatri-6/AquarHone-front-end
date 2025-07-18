@@ -2,7 +2,7 @@
 
 ### 📌 Description
 
-Frontend de l'application **AquaRhône** construit avec **Nuxt 3**, **Vue 3**, **Tailwind CSS**, et Vue Router. Il consomme l’API du backend pour afficher les activités et gérer les réservations.
+Frontend de l'application **AquaRhône** construit avec **Vue 3**, **Tailwind CSS**, et Vue Router. Il consomme l’API du backend pour afficher les activités et gérer les réservations.
 
 ### 🚀 Fonctionnalités principales
 
@@ -18,12 +18,25 @@ Frontend de l'application **AquaRhône** construit avec **Nuxt 3**, **Vue 3**, *
 ```
 frontend/
 ├── src/
-│   ├── pages/
-│   ├── components/
-│   ├── assets/
-│   └── app.vue / layouts
-├── public/
-└── tailwind.config.js
+│   ├── assets/              
+│   ├── components/          
+│   ├── pages/              
+│   │   ├── Home.vue
+│   │   ├── Login.vue
+│   │   ├── Register.vue
+│   │   ├── Activities.vue
+│   │   ├── ActivityDetail.vue
+│   │   ├── AdminPanel.vue
+│   │   ├── Reservations.vue
+│   │   └── adminReservations.vue
+│   ├── router/              
+│   ├── store/              
+│   ├── App.vue              
+│   └── main.js              
+├── index.html              
+├── package.json             
+└── vite.config.js           
+
 ```
 
 ### ⚙️ Installation
@@ -64,5 +77,5 @@ Le frontend est accessible sur :
 - `/login` → Connexion
 - `/register` → Création de compte
 - `/activities` → Liste des activités
-- `/activities/:id` → Détails + réservation
-- `/admin` → Gestion des activités (admin)
+- `/activitiesDetail` → Détails + réservation
+- `/adminReservation` → Gestion des activités (admin)
